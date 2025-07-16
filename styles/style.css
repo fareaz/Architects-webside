@@ -5,3 +5,60 @@
   font-weight:400px;
   font-style: normal;
 }
+*{
+    margin: 0 auto;
+}
+/* share-stye */
+.flex{
+    display: flex;
+}
+.dark-2{
+    color:rgb(66, 66, 66) ;
+}
+.bg-color{
+    background-color:rgba(255, 144, 14, 0.1);
+}
+
+
+
+
+/* header-style */
+
+
+/* nav-style */
+nav{
+    justify-content: space-between;
+    align-items: center;
+}
+nav h2{
+    font: size 3rem;;
+    font-weight: 700;
+}
+nav li {
+    list-style: none;
+    font-size:1.2rem; 
+     
+}
+nav li a{
+    text-decoration: none;
+    
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+/* responsive-style-start */
+@media screen and (max-width:576px) {
+    nav,
+    ul{
+        flex-direction: column;
+    }
+    nav li,h2 {
+     margin-bottom: 20px;
+    }
+}
