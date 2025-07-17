@@ -20,7 +20,10 @@ main{
 .flex{
     display: flex;
 }
-
+.font{
+    font-size: 3rem;
+    font-weight: 700;
+}
 .dark-2{
     color:rgb(66, 66, 66) ;
 }
@@ -140,8 +143,29 @@ gap: 50px;
      font-size: 4rem;
     font-weight: 700;
 }
-
-
+/* facts-style */
+.skills-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30PX;
+}
+.skill{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid rgb(255, 144, 14);
+    border-radius: 8px;
+    padding: 20px;
+}
+.skill h2{
+    font-size: 3rem;
+    font-weight: 600px;
+}
+.skill h4{
+    font-size:1.33rem ;
+    font-weight:600px;
+}
 
 
 
@@ -168,5 +192,8 @@ gap: 50px;
     }
     .future-img{
         text-align: center;
+    }
+    .skills-container{
+        grid-template-columns:1fr
     }
 }
