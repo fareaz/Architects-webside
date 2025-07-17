@@ -5,13 +5,22 @@
   font-weight:400px;
   font-style: normal;
 }
-*{
+p{
+    font-size: 16px;
+    color:rgb(66, 66, 66);
+}
+img{
+    width: 100%;
+}
+main{
+    max-width: 1260px;
     margin: 0 auto;
 }
 /* share-stye */
 .flex{
     display: flex;
 }
+
 .dark-2{
     color:rgb(66, 66, 66) ;
 }
@@ -44,8 +53,56 @@ nav li a{
     
     margin-right: 20px;
 }
-
-
+.nav-container,.banner{
+    max-width:1360px ;
+    margin: 0 auto;
+    }
+/* nav-banner */
+.banner-content
+{
+    max-width:860px ;
+    text-align: center;
+    margin: 50px auto;
+}
+.banner-content h2{
+    font-size: 4rem;
+    font-weight:700;
+}
+.btn-primary{
+    background-color: #FF900E;
+    color: white;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+}
+/* main */
+/* business-section */
+.business{
+align-items: center;
+margin-top: 100px;
+gap: 50px;
+}
+.business-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.business-content{
+    max-width: 540px;
+}
+.business-content h2{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.light{
+    font-weight: 400;
+    color: rgb(114, 114, 114);
+}
+.orange{
+    color:rgb(255, 144, 14) ;
+}
 
 
 
@@ -55,10 +112,13 @@ nav li a{
 /* responsive-style-start */
 @media screen and (max-width:576px) {
     nav,
-    ul{
+    ul,.business{
         flex-direction: column;
     }
     nav li,h2 {
      margin-bottom: 20px;
+    }
+    .business-img{
+        grid-template-columns: 1fr;
     }
 }
