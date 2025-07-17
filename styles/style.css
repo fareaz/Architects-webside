@@ -166,7 +166,20 @@ gap: 50px;
     font-size:1.33rem ;
     font-weight:600px;
 }
-
+/* .sponsor-style */
+.sponsor-info {
+    max-width:540px ;
+    text-align: center;
+    margin:  50px auto;
+}
+.sponsor-icon{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 50px;
+}
+.sponsor-icon img{
+    filter: grayscale(100%);
+}
 
 
 /* responsive-style-start for mobile */
@@ -180,7 +193,8 @@ gap: 50px;
     nav li,h2 {
      margin-bottom: 20px;
     }
-    .business-img{
+    .business-img,
+    .skills-container{
         grid-template-columns: 1fr;
     }
     .future-btn{
@@ -193,7 +207,5 @@ gap: 50px;
     .future-img{
         text-align: center;
     }
-    .skills-container{
-        grid-template-columns:1fr
-    }
+   
 }
