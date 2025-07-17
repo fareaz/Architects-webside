@@ -81,7 +81,8 @@ nav li a{
 /* business-section */
 .business{
 align-items: center;
-margin-top: 100px;
+margin: 100px auto;
+
 gap: 50px;
 }
 .business-img{
@@ -103,16 +104,53 @@ gap: 50px;
 .orange{
     color:rgb(255, 144, 14) ;
 }
+/* future-style */
+.future{
+    margin-top:0;
+    margin-bottom: 0;
+    gap: 150px;
+}
+.future-content{
+    max-width:588px ;
+}
+.future-content h2{
+    font-size: 3rem;
+    font-weight: 700;
+    border-left: 5px solid rgb(255, 144, 14);
+    padding-left: 20px;
+    margin: 0;
+}
+ 
+
+.future-card{
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 20px 0  rgb(19, 19, 19);
+    margin-bottom: 20px;
+    max-height: 170px;
+}
+.future-btn{
+    padding: 40px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+.future-btn span{
+     font-size: 4rem;
+    font-weight: 700;
+}
 
 
 
 
 
-
-/* responsive-style-start */
+/* responsive-style-start for mobile */
 @media screen and (max-width:576px) {
     nav,
-    ul,.business{
+    ul,
+    .business,
+    .future{
         flex-direction: column;
     }
     nav li,h2 {
@@ -120,5 +158,15 @@ gap: 50px;
     }
     .business-img{
         grid-template-columns: 1fr;
+    }
+    .future-btn{
+    padding: 30px;
+    font-weight: 500;
+    margin:10px auto;}
+    .future-btn span{
+     font-size: 1rem;
+    }
+    .future-img{
+        text-align: center;
     }
 }
